@@ -3,25 +3,17 @@ require 'yaml'
 
 data = YAML.load_file( "indicium_vitae.yaml" )
 
-exec_template = lambda do |task|
-  template_path = File.expand_path(File.join(data[task][:template]))
-  template = ERB.new(File.read( template_path ), 0, ">")
-
-  f = File.new( data[task][:output], "w" )
-  f.write(template.result(binding))
-  f.close
+exec_template = lambda do |t|
+  template = ERB.new(File.read( t.prerequisites[0] ), 0, ">")
+  File.open(t.name, 'w') {|f| f.write(template.result(binding)) }
 end
 
-task :tex do
-  exec_template.call(:tex)
-end
+file data[:tex][:output] => data[:tex][:template], &exec_template
+file data[:html][:output] => data[:html][:template], &exec_template
 
-task :pdf => :tex do
+task :tex => data[:tex][:output]
+task :pdf => data[:tex][:output] do
   `pdflatex #{data[:tex][:output]}`
-end
-
-task :html do
-  exec_template.call(:html)
 end
 
 task :clean do
