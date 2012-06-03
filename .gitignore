@@ -4,6 +4,7 @@
 *.pdf
 *.svg
 *.tex
+*.html
 *~
 _TZ_*
 *#

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link href="vendor/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="vendor/css/font-awesome.css" rel="stylesheet" type="text/css" media="screen" />
+  <link href="vendor/css/cv.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+  <div id="cv">
+    <div class="row-fluid">
+      <div class="span1">
+        Contact Information
+      </div>
+      <div class="span6">
+        <div id="street">
+          <%= data[:address][:street] %>
+        </div>
+        <div id="other">
+          <%= data[:address][:other] %>
+        </div>
+      </div>
+      <div class="span5" id="contact">
+        <div>
+          phone: <%= data[:phone] %>
+        </div>
+        <div>
+          email: <%= data[:email] %>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">
+        Research Interests
+      </div>
+      <div class="span11">
+        <%= data[:interests].join(", ") %>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">
+        Education
+      </div>
+      <div class="span11">
+        <div>
+          <b><%= data[:ed][:where][:title] %></b>, <%= data[:ed][:where][:loc] %>
+        </div>
+        <div>
+          <em><%= data[:ed][:what][:degree] %></em>, <%= data[:ed][:what][:major] %> <b class="right"><%= data[:ed][:when] %></b>
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">
+        Professional Experience
+      </div>
+      <div class="span11">
+        <% data[:work].each_with_index do |position, i| %>
+        <div>
+          <div>
+            <b><%= position[:where][:title] %></b>, <%= position[:where][:loc] %>
+          </div>
+          <div>
+            <em><%= position[:what][:title] %></em><b class="right"><%= position[:when] %></b>
+          </div>
+          <div>
+            <%= position[:what][:description] %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">
+        Publications
+      </div>
+      <div class="span11">
+        <% data[:pubs].each_with_index do |pub, i| %>
+        <div>
+          <%= pub[:authors].join(",") %>, "<%= pub[:title] %>", <em><%= pub[:where] %></em>, <%= pub[:when] %><%= pub[:url] ? "," : "" %> <a href="<%= pub[:url] %>"><%= pub[:url] %></a>
+        </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">
+        Recent Presentations
+      </div>
+      <div class="span11">
+        <% data[:presos].each_with_index do |preso, i| %>
+        <div>
+          <%= preso[:authors].join(",") %>, "<%= preso[:title] %>", <em><%= preso[:where] %></em>, <% if !preso[:url] %><%= preso[:description] %>, <% end %> <%= preso[:when] %><%= preso[:url] ? "," : "" %> <a href="<%= preso[:url] %>"><%= preso[:url] %></a> <%= preso[:note] %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span1">
+        Posters
+      </div>
+      <div class="span11">
+        <% data[:posters].each_with_index do |poster, i| %>
+        <div>
+          <%= poster[:authors].join(",") %>, "<%= poster[:title] %>", <em><%= poster[:where] %></em>, <%= poster[:when] %><%= poster[:url] ? "," : "" %> <a href="<%= poster[:url] %>"><%= poster[:url] %></a> <%= poster[:note] %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</body>

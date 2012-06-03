@@ -11,6 +11,7 @@ end
 file data[:tex][:output] => data[:tex][:template], &exec_template
 file data[:html][:output] => data[:html][:template], &exec_template
 
+task :html => data[:html][:output]
 task :tex => data[:tex][:output]
 task :pdf => data[:tex][:output] do
   `pdflatex #{data[:tex][:output]}`
