@@ -17,8 +17,5 @@ task :pdf => data[:tex][:output] do
 end
 
 task :clean do
-  `rm -f *.tex`
-  `rm -f *.log`
-  `rm -f *.pdf`
-  `rm -f _TZ_*`
+  `rm -f *.tex *.log *.pdf _TZ_*`
 end
