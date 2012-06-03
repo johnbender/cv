@@ -4,7 +4,12 @@ This repository is a simple CV targetted at graduate admissions. It is based on 
 
 ## Build Instructions
 
-This CV is built using the TeX Live included as a package on Ubuntu. Assuming some LaTeX distrubution is installed with `pdflatex`.
+This CV is built using the TeX Live LaTex distribution from the `indicium_vitae` yaml file. Assuming Ruby, `rake`, and `pdflatex` are in the execution path:
 
-    $ pdflatex resume.tex
-    $ evince resume.pdf # or `open resume.pdf`
+    $ rake pdf
+
+Or if you just want to view the TeX output:
+
+    $ rake tex
+
+Soon there will also be HTML output driven by the same data.
