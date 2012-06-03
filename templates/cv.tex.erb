@@ -1,0 +1,81 @@
+\documentclass[margin,line]{resume}
+\usepackage{xcolor}
+\usepackage[urlbordercolor=white]{hyperref}
+\begin{document}
+\name{\Large John Bender}
+\begin{resume}
+
+  % Contact Information
+  \section{\mysidestyle Contact\\Information}
+
+  <%= data[:address][:street] %>        \hfill phone: <%= data[:phone] %>\\
+  <%= data[:address][:other] %>         \hfill email: <%= data[:email] %>
+
+  % Research Interests
+  \section{\mysidestyle Research\\Interests}
+
+  <%= data[:interests] %>
+
+  % Education
+  \section{\mysidestyle Education}
+
+  \textbf{<%= data[:ed][:where][:title] %>}, <%= data[:ed][:where][:loc] %> \vspace{2mm}\\
+  \textsl{<%= data[:ed][:what][:degree] %>}, <%= data[:ed][:what][:major] %> \hfill \textbf{ <%= data[:ed][:when] %>}\vspace{-3mm}\\
+
+  % Professional Experience
+  \section{\mysidestyle Professional\\Experience}
+
+  <% data[:work].each_with_index do |position, i| %>
+     \textbf{<%= position[:where][:title] %>}, <%= position[:where][:loc] %>\vspace{1mm}\\
+     \textsl{<%= position[:what][:title] %>} \hfill \textbf{<%= position[:when] %>}\\
+     <%= position[:what][:description] %>
+     <% if i + 1 != data[:work].length %> \vspace{2mm}\\ <% end %>
+  <% end %>
+
+  \section{\mysidestyle Publications}
+
+  <% data[:pubs].each_with_index do |pub, i| %>
+    <%= pub[:authors].join(",") %>, ``<%= pub[:title] %>'', \textsl{<%= pub[:where] %>}, <%= pub[:when] %><%= pub[:url] ? "," : "" %> \url{<%= pub[:url] %>}
+    <% if i + 1 != data[:pubs].length %> \vspace{2mm}\\ <% end %>
+  <% end %>
+
+  \section{\mysidestyle Recent Presentations}
+
+  <% data[:presos].each_with_index do |preso, i| %>
+    <%= preso[:authors].join(",") %>, ``<%= preso[:title] %>'', \textsl{<%= preso[:where] %>}, <%= preso[:when] %><%= preso[:url] ? "," : "" %> \url{<%= preso[:url] %>} <%= preso[:note] %>
+    <% if i + 1 != data[:presos].length %> \vspace{2mm}\\ <% end %>
+  <% end %>
+
+  \section{\mysidestyle Posters}
+
+  <% data[:posters].each_with_index do |poster, i| %>
+    <%= poster[:authors].join(",") %>, ``<%= poster[:title] %>'', \textsl{<%= poster[:where] %>}, <%= poster[:when] %><%= poster[:url] ? "," : "" %> \url{<%= poster[:url] %>} <%= poster[:note] %>
+    <% if i + 1 != data[:posters].length %> \vspace{2mm}\\ <% end %>
+  <% end %>
+
+  % Open Source Contributions
+  \section{\mysidestyle Open Source}
+
+  <% data[:oss].each_with_index do |project, i| %>
+    <%= project[:title] %>, <%= project[:name] %>, \url{<%= project[:url] %>}
+    <% if i + 1 != data[:oss].length %> \vspace{1mm}\\ <% end %>
+  <% end %>
+
+  % Honors and Awards
+  \section{\mysidestyle Honors/Awards}
+
+  <% data[:awards].each_with_index do |award, i| %>
+    <%= award[:name] %>, <%= award[:who] %>, <%= award[:when] %>
+    <% if i + 1 != data[:awards].length %> \vspace{1mm}\\ <% end %>
+  <% end %>
+
+  % Computer Skills
+  \section{\mysidestyle Programming}
+  <%= data[:skills] %>
+
+  % References
+  \section{\mysidestyle References}
+  \textsl{available upon request}
+
+\end{resume}
+\end{document}
