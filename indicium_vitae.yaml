@@ -12,7 +12,12 @@
 :phone: "+1 917 504 3095"
 :email: "john.m.bender@gmail.com"
 
-:interests: "Formal Verification, Software Model Checking, Type Systems, Static Analysis, Applied Mathematics"
+:interests:
+  - Formal Verification
+  - Software Model Checking
+  - Type Systems
+  - Static Analysis
+  - Applied Mathematics
 
 :ed:
   :where:
@@ -131,4 +136,12 @@
     :who: "NCAA Division I Men's Volleyball"
     :when: "2001 -- 2005 "
 
-:skills: "JavaScript, Ruby, Bash, SQL, Haskell, Python, .NET, Java"
+:skills:
+  - JavaScript
+  - Ruby
+  - Bash
+  - SQL
+  - Haskell
+  - Python
+  - ".NET"
+  - Java
