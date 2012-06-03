@@ -21,6 +21,7 @@ task :html do
 end
 
 task :clean do
+  `rm -f *.tex`
   `rm -f *.log`
   `rm -f *.pdf`
   `rm -f _TZ_*`
