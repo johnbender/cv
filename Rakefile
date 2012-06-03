@@ -3,7 +3,7 @@ require 'yaml'
 
 data = YAML.load_file( "indicium_vitae.yaml" )
 
-def exec_template(task, data)
+exec_template = lambda do |task|
   template_path = File.expand_path(File.join(data[task][:template]))
   template = ERB.new(File.read( template_path ), 0, ">")
 
@@ -13,7 +13,7 @@ def exec_template(task, data)
 end
 
 task :tex do
-  exec_template(:tex, data)
+  exec_template.call(:tex)
 end
 
 task :pdf => :tex do
@@ -21,7 +21,7 @@ task :pdf => :tex do
 end
 
 task :html do
-  exec_template(:html, data)
+  exec_template.call(:html)
 end
 
 task :clean do
