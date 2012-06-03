@@ -1,0 +1,134 @@
+:tex:
+  :template: "templates/cv.tex.erb"
+  :output: "cv.tex"
+:html:
+  :template: "templates/cv.html.erb"
+  :output: "cv.html"
+
+:address:
+  :street: "6109 Melvil Street"
+  :other: "Culver City, California 90232"
+
+:phone: "+1 917 504 3095"
+:email: "john.m.bender@gmail.com"
+
+:interests: "Formal Verification, Software Model Checking, Type Systems, Static Analysis, Applied Mathematics"
+
+:ed:
+  :where:
+    :title: "University of Hawai'i at Manoa"
+    :loc: "Honolulu, Hawai'i, United States"
+  :what:
+    :degree: "Bachelors of Science"
+    :major: "Computer Science"
+  :when: "August 2001 -- May 2006"
+
+:work:
+  -
+    :where:
+      :title: "Adobe Systems"
+      :loc: "San Francisco, California, United States"
+    :what:
+      :title: "Computer Scientist"
+      :description: "Senior software engineer focused on the jQuery Mobile open source JavaScript library. Contributed to project guidance/management, code base, build support, test suite, and operations."
+    :when: "July 2011 -- present"
+  -
+    :where:
+      :title: "Originate Labs"
+      :loc: "Los Angeles, California, United States"
+    :what:
+      :title: "Tech Lead, Director of Engineering"
+      :description: "Senior staff member focused on management process, tools, research, development practices, project oversight and hiring practices."
+    :when: "August 2009 -- July 2011"
+  -
+    :where:
+      :title: "The Henson Group"
+      :loc: "New York City, New York, United States"
+    :what:
+      :title: "Software Consultant"
+      :description: "Specialized in .NET technology stack working for a diverse client set including hedge funds and large multinational corporations like Weight Watchers."
+    :when: "November 2007 -- August 2009"
+
+:pubs:
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Automatically Identifying Performance Optimizations in jQuery Based JavaScript Applications"
+    :where: "Technical Report"
+    :description: "Identifying a set of morphisms via category theory that can be composed leading to loop fusion"
+    :when: "April, 2012"
+    :url: "http://johnbender.us/auto-js.pdf"
+
+:presos:
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Progressive Enhancement on the Mobile Web"
+    :where: "O'Reilly Open Source Convention"
+    :description: "The pitfalls of modern mobile browser fragmentation"
+    :when: "July, 2012"
+    :url:
+    :note:
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Faster jQuery with Category Theory"
+    :where: "jQuery Conference San Francisco"
+    :description: "On using category theory to identify performance optimizations in jQuery"
+    :when: "June, 2012"
+    :url: "http://johnbender.github.com/presentation-faster-js"
+    :note: "[slides]"
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Middleware as a General Purpose Abstraction"
+    :where: "Los Angeles Ruby Conference"
+    :description: "Novel form of object composition derived from WSGI middleware"
+    :when: "February, 2012"
+    :url: "http://www.youtube.com/watch?v=fcNaiP5tea0"
+    :note:
+  -
+    :authors:
+      - "Bender, J."
+    :title: "JavaScript Testing with JavaScript"
+    :where: "jQuery Conference Boston"
+    :description: "Options for, and common issues with, automated JavaScript testing"
+    :when: "October, 2011"
+    :url:
+    :note:
+
+:posters:
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Automatically Identifying Performance Optimizations in jQuery Based JavaScript Applications"
+    :where: "Submitted OOPSLA/SPLASHCON"
+    :description: "The pitfalls of modern mobile browser fragmentation"
+    :when: "October, 2012"
+    :url: "http://johnbender.github.com/auto-jquery-optimization-paper"
+
+:oss:
+  -
+    :title: "Development Lead"
+    :name: "jQuery Mobile JavaScript library"
+    :url: "http://www.jquerymobile.com"
+  -
+    :title: "Co-Creator"
+    :name: "Vagrant command line virtualization tool"
+    :url: "http://www.vagrantup.com"
+
+:awards:
+  -
+    :name: "National Championship"
+    :who: "NCAA Division I Men's Volleyball"
+    :when: "2002"
+  -
+    :name: "National Player of the Week"
+    :who: "NCAA Division I Men's Volleyball"
+    :when: "2004, 2005"
+  -
+    :name: "Letterman, University of Hawai'i"
+    :who: "NCAA Division I Men's Volleyball"
+    :when: "2001 -- 2005 "
+
+:skills: "JavaScript, Ruby, Bash, SQL, Haskell, Python, .NET, Java"
