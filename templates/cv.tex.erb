@@ -58,7 +58,7 @@
   \section{\mysidestyle Open Source}
 
   <% data[:oss].each_with_index do |project, i| %>
-  <%= project[:title] %>, <%= project[:name] %>, \url{<%= project[:url] %>} 3<% if i + 1 != data[:oss].length %> \vspace{1mm}\\ <% end %>
+  <%= project[:title] %>, <%= project[:name] %>, \url{<%= project[:url] %>} <% if i + 1 != data[:oss].length %> \vspace{1mm}\\ <% end %>
 
   <% end %>
 
