@@ -24,8 +24,6 @@ task :clean do
 end
 
 task :"gh-pages" => :html do
-  `git checkout gh-pages`
   `mv #{data[:html][:output]} index.html`
   `git commit -a -m 'index page update'`
-  `git checkout master`
 end
