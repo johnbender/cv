@@ -25,5 +25,6 @@ end
 
 task :"gh-pages" => :html do
   `mv #{data[:html][:output]} index.html`
-  `git commit -a -m 'index page update'`
+  `git add .`
+  `git commit -m 'index page update'`
 end
