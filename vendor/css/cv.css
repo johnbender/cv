@@ -1,3 +1,27 @@
+#cv {
+  /* current blog width */
+  width: 680px;
+  margin: 20px;
+}
+
+#name {
+  border-bottom: 1px solid black;
+  margin-bottom: 1em;
+}
+
+.row-fluid {
+  margin-bottom: 1em;
+}
+
+.position {
+  margin-bottom: 1em;
+}
+
+.citation {
+  margin-bottom: 0.5em;
+}
+
+
 #contact {
   text-align: right;
 }

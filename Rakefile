@@ -17,6 +17,8 @@ task :pdf => data[:tex][:output] do
   `pdflatex #{data[:tex][:output]}`
 end
 
+task :default => [:pdf, :html]
+
 task :clean do
   `rm -f *.tex *.log *.pdf _TZ_*`
 end
