@@ -22,3 +22,12 @@ task :default => [:pdf, :html]
 task :clean do
   `rm -f *.tex *.log *.pdf _TZ_*`
 end
+
+task :"gh-pages" do
+  branch = `git branch | grep "*" | sed 's/\* //'`
+  `git checkout gh-pages`
+  Rake::Task["html"].invoke
+  `mv #{data[:html][:output]} index.html`
+  `git commit -a -m "index page update"`
+  `git checkout #{branch}`
+end
