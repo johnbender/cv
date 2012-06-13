@@ -20,7 +20,7 @@ end
 task :default => [:pdf, :html]
 
 task :clean do
-  `rm -f *.tex *.log *.pdf _TZ_*`
+  `rm -f *.tex *.log *.pdf _TZ_* *.html`
 end
 
 task :"gh-pages" => :html do

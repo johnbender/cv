@@ -35,7 +35,7 @@
       :loc: "San Francisco, California, United States"
     :what:
       :title: "Computer Scientist"
-      :description: "Senior software engineer focused on the jQuery Mobile open source JavaScript library. Contributed to project guidance/management, code base, build support, test suite, and operations."
+      :description: "Senior software engineer focused on the jQuery Mobile open source JavaScript library. Contributed project guidance, features, build support, testing tools, and operations support."
     :when: "July 2011 -- present"
   -
     :where:
@@ -59,7 +59,7 @@
     :authors:
       - "Bender, J."
     :title: "Automatically Identifying Performance Optimizations in jQuery Based JavaScript Applications"
-    :where: "Technical Report"
+    :where: "Undetermined"
     :description: "Identifying a set of morphisms via category theory that can be composed leading to loop fusion"
     :when: "April, 2012"
     :url: "http://johnbender.us/auto-js.pdf"
@@ -115,12 +115,16 @@
 :oss:
   -
     :title: "Development Lead"
-    :name: "jQuery Mobile JavaScript library"
+    :name: "jQuery Mobile"
     :url: "http://www.jquerymobile.com"
+    :when: "February, 2010 -- Present"
+    :description: "A JavaScript library for mobile compatability and UI consistency. Contributed project guidance, features, build support, testing tools, and operations support."
   -
     :title: "Co-Creator"
-    :name: "Vagrant command line virtualization tool"
+    :name: "Vagrant"
     :url: "http://www.vagrantup.com"
+    :when: "November, 2010 -- Present"
+    :description: "A command line tool for simplifying the use of virtual machines as development environments. Contributed initial source, testing, internal abstractions, and features."
 
 :awards:
   -

@@ -110,12 +110,20 @@
     </div>
     <div class="row-fluid">
       <div class="span2">
-        Open Source
+        Professional Experience
       </div>
       <div class="span10">
         <% data[:oss].each_with_index do |project, i| %>
-        <div>
-          <%= project[:title] %>, <%= project[:name] %>, <a href="<%= project[:url] %>"><%= project[:url] %></a>
+        <div class="position">
+          <div>
+            <b><%= project[:name] %></b>
+          </div>
+          <div>
+            <em><%= project[:title] %></em><b class="right"><%= project[:when] %></b>
+          </div>
+          <div>
+            <%= project[:description] %> <a class="right" href="<%= project[:url] %>"><%= project[:url] %></a>
+          </div>
         </div>
         <% end %>
       </div>
@@ -130,14 +138,6 @@
           <%= award[:name] %>, <%= award[:who] %>, <%= award[:when] %>
         </div>
         <% end %>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span2">
-        Programming
-      </div>
-      <div class="span10">
-        <%= data[:skills].join(", ") %>
       </div>
     </div>
     <div class="row-fluid">
