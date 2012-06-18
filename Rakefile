@@ -24,9 +24,12 @@ task :clean do
 end
 
 task :"gh-pages" => :html do
-  `git checkout gh-pages`
-  `mv #{data[:html][:output]} index.html`
-  `git add .`
-  `git commit -m 'index page update'`
-  `git checkout master`
+  Kernel.exec(<<-CMD)
+    set -e
+    git checkout gh-pages
+    mv #{data[:html][:output]} index.html
+    git add .
+    git commit -m 'index page update
+    git checkout master
+  CMD
 end
