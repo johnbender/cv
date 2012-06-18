@@ -40,7 +40,7 @@
     <% if i + 1 != data[:pubs].length %> \vspace{2mm}\\ <% end %>
   <% end %>
 
-  \section{\mysidestyle Recent Presentations}
+  \section{\mysidestyle Recent/Upcoming Presentations}
 
   <% data[:presos].each_with_index do |preso, i| %>
   <%= preso[:authors].join(",") %>, ``<%= preso[:title] %>'', \textsl{<%= preso[:where] %>}, <% if !preso[:url] %><%= preso[:description] %>, <% end %> <%= preso[:when] %><%= preso[:url] ? "," : "" %> \url{<%= preso[:url] %>} <%= preso[:note] %><% if i + 1 != data[:presos].length %> \vspace{2mm}\\ <% end %>
