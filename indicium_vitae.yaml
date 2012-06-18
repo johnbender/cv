@@ -77,12 +77,11 @@
   -
     :authors:
       - "Bender, J."
-    :title: "Faster jQuery with Category Theory"
+    :title: "Faster JavaScript with Category Theory"
     :where: "jQuery Conference San Francisco"
     :description: "On using category theory to identify performance optimizations in jQuery"
     :when: "June, 2012"
-    :url: "http://johnbender.github.com/presentation-faster-js"
-    :note: "[slides]"
+    :url: "http://johnbender.us/?p=1762"
   -
     :authors:
       - "Bender, J."
@@ -90,8 +89,7 @@
     :where: "Los Angeles Ruby Conference"
     :description: "Novel form of object composition derived from WSGI middleware"
     :when: "February, 2012"
-    :url: "http://www.youtube.com/watch?v=fcNaiP5tea0"
-    :note:
+    :url: "http://johnbender.us/?p=1739"
   -
     :authors:
       - "Bender, J."
@@ -99,8 +97,6 @@
     :where: "jQuery Conference Boston"
     :description: "Options for, and common issues with, automated JavaScript testing"
     :when: "October, 2011"
-    :url:
-    :note:
 
 :posters:
   -
