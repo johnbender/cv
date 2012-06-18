@@ -29,7 +29,7 @@ task :"gh-pages" => :html do
     git checkout gh-pages
     mv #{data[:html][:output]} index.html
     git add .
-    git commit -m 'index page update
+    git commit -m 'index page update'
     git checkout master
   CMD
 end
