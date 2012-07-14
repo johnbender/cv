@@ -79,7 +79,7 @@
       <div class="span10">
         <% data[:pubs].each_with_index do |pub, i| %>
         <div>
-          <%= pub[:authors].join(",") %>, "<%= pub[:title] %>", <em><%= pub[:where] %></em>, <%= pub[:when] %><%= pub[:url] ? "," : "" %> <a href="<%= pub[:url] %>"><%= pub[:url] %></a>
+          <%= pub[:authors].join(",") %>, "<%= pub[:title] %>", <em><%= pub[:where] %></em><%= pub[:when] ? ", " : "" %><%= pub[:when] %><%= pub[:url] ? ", " : "" %> <a href="<%= pub[:url] %>"><%= pub[:url] %></a>
         </div>
         <% end %>
       </div>

@@ -36,7 +36,7 @@
   \section{\mysidestyle For Publication}
 
   <% data[:pubs].each_with_index do |pub, i| %>
-  <%= pub[:authors].join(",") %>, ``<%= pub[:title] %>'', \textsl{<%= pub[:where] %>}, <%= pub[:when] %><%= pub[:url] ? "," : "" %> \url{<%= pub[:url] %>}
+  <%= pub[:authors].join(",") %>, ``<%= pub[:title] %>'', \textsl{<%= pub[:where] %>}<%= pub[:when] ? ", " : "" %><%= pub[:when] %><%= pub[:url] ? ", " : "" %> \url{<%= pub[:url] %>}
     <% if i + 1 != data[:pubs].length %> \vspace{2mm}\\ <% end %>
   <% end %>
 
