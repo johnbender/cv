@@ -59,7 +59,7 @@
   -
     :authors:
       - "Bender, J."
-    :title: "Applications of Category Theory in Modern JavaScript Applications"
+    :title: "Applications of Category Theory in Modern JavaScript"
     :where: "In Progress"
     :description: "Identifying a set of morphisms via category theory that can be composed leading to loop fusion"
     :when:
@@ -103,11 +103,10 @@
   -
     :authors:
       - "Bender, J."
-    :title: "Applications of Category Theory in Modern JavaScript Applications"
+    :title: "Applications of Category Theory in Modern JavaScript"
     :where: "In Progress"
-    :description: "The pitfalls of modern mobile browser fragmentation"
     :when: "October, 2012"
-    :url: "http://johnbender.github.com/auto-jquery-optimization-paper"
+    :url: "http://johnbender.github.com/applications-cat-theory"
 
 :oss:
   -
