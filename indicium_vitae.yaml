@@ -34,7 +34,7 @@
       :title: "Adobe Systems"
       :loc: "San Francisco, California, United States"
     :what:
-      :title: "Computer Scientist"
+      :title: "Senior Computer Scientist"
       :description: "Senior software engineer focused on the jQuery Mobile open source JavaScript library. Contributed project guidance, features, build support, testing tools, and operations support."
     :when: "July 2011 -- present"
   -
@@ -58,8 +58,8 @@
   -
     :authors:
       - "Bender, J."
-    :title: "Automatically Identifying Performance Optimizations in jQuery Based JavaScript Applications"
-    :where: "Undetermined"
+    :title: "Applications of Category Theory in Modern JavaScript Applications"
+    :where: "In Progress"
     :description: "Identifying a set of morphisms via category theory that can be composed leading to loop fusion"
     :when:
     :url: "http://johnbender.us/auto-js.pdf"
@@ -102,8 +102,8 @@
   -
     :authors:
       - "Bender, J."
-    :title: "Automatically Identifying Performance Optimizations in jQuery Based JavaScript Applications"
-    :where: "Submitted OOPSLA/SPLASHCON"
+    :title: "Applications of Category Theory in Modern JavaScript Applications"
+    :where: "In Progress"
     :description: "The pitfalls of modern mobile browser fragmentation"
     :when: "October, 2012"
     :url: "http://johnbender.github.com/auto-jquery-optimization-paper"
