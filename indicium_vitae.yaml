@@ -1,6 +1,7 @@
 :tex:
   :template: "templates/cv.tex.erb"
   :output: "cv.tex"
+  :pdf: "cv.pdf"
 :html:
   :template: "templates/cv.html.erb"
   :output: "cv.html"

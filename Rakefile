@@ -14,7 +14,7 @@ file data[:html][:output] => data[:html][:template], &exec_template
 task :html => data[:html][:output]
 task :tex => data[:tex][:output]
 task :pdf => data[:tex][:output] do
-  `pdflatex #{data[:tex][:output]}`
+  `pdflatex #{data[:tex][:output]} #{data[:tex][:pdf]}`
 end
 
 task :default => [:pdf, :html]
@@ -28,7 +28,7 @@ task :"gh-pages" => [:html, :pdf] do
     set -e
     git checkout gh-pages
     mv #{data[:html][:output]} index.html
-    mv #{data[:tex][:output]} cv-`date +%Y-%m`.pdf
+    mv #{data[:tex][:pdf]} cv-`date +%Y-%m`.pdf
     git add .
     git commit -m 'index page update'
     git checkout master
