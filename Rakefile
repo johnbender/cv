@@ -23,11 +23,12 @@ task :clean do
   `rm -f *.tex *.log *.pdf _TZ_* *.html`
 end
 
-task :"gh-pages" => :html do
+task :"gh-pages" => [:html, :pdf] do
   Kernel.exec(<<-CMD)
     set -e
     git checkout gh-pages
     mv #{data[:html][:output]} index.html
+    mv #{data[:tex][:output]} cv-`date +%Y-%m`.pdf
     git add .
     git commit -m 'index page update'
     git checkout master
