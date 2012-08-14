@@ -63,7 +63,7 @@
     :where: "In Progress"
     :description: "Identifying a set of morphisms via category theory that can be composed leading to loop fusion"
     :when:
-    :url: "http://johnbender.us/auto-js.pdf"
+    :url: "http://johnbender.github.com/applications-cat-theory/paper-2012-08.pdf"
 
 :presos:
   -
@@ -82,7 +82,7 @@
     :where: "jQuery Conference San Francisco"
     :description: "On using category theory to identify performance optimizations in jQuery"
     :when: "June, 2012"
-    :url: "http://johnbender.us/?p=1762"
+    :url: "http://johnbender.us/2012/06/15/presentation-faster-javascript-through-category-theory/"
   -
     :authors:
       - "Bender, J."
@@ -90,7 +90,7 @@
     :where: "Los Angeles Ruby Conference"
     :description: "Novel form of object composition derived from WSGI middleware"
     :when: "February, 2012"
-    :url: "http://johnbender.us/?p=1739"
+    :url: "http://johnbender.us/2012/04/28/middleware-as-a-general-purpose-abstraction/"
   -
     :authors:
       - "Bender, J."
