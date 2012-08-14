@@ -3,7 +3,8 @@ require 'yaml'
 
 data = YAML.load_file( "indicium_vitae.yaml" )
 
-exec_template = lambda do |t|
+exec_template = lambda do |t, args|
+  data[:public] = ENV['PUBLIC']
   template = ERB.new(File.read( t.prerequisites[0] ), 0, ">")
   File.open(t.name, 'w') {|f| f.write(template.result(binding)) }
 end

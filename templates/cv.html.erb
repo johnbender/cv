@@ -1,8 +1,8 @@
+<% if !data[:public] %>
 <!doctype html>
 <html lang="en">
 <head>
   <link href="vendor/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
-  <link href="vendor/css/font-awesome.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="vendor/css/cv.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
@@ -10,6 +10,15 @@
     <div id="name">
       <h1>John Bender<h1>
     </div>
+<% else %>
+---
+layout: page
+title : Curriculum Vitae
+link : CV
+header : Curriculum Vitae
+group: navigation
+---
+<% end %>
     <div class="row-fluid">
       <div class="span2">
         Contact Information
@@ -148,5 +157,7 @@
         <em>available upon request</em>
       </div>
     </div>
+<% if !data[:public] %>
   </div>
 </body>
+<% end %>
