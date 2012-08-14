@@ -5,7 +5,7 @@
   <link href="vendor/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
   <link href="vendor/css/cv.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
-<body>
+<body class="public">
   <div id="cv">
     <div id="name">
       <h1>John Bender<h1>
@@ -39,6 +39,7 @@ link : CV
 header : Curriculum Vitae
 group: navigation
 ---
+  <div id="cv">
 <% end %>
     <div class="row-fluid">
       <div class="span2">
@@ -157,7 +158,7 @@ group: navigation
         <em>available upon request</em>
       </div>
     </div>
-<% if !data[:public] %>
   </div>
+<% if !data[:public] %>
 </body>
 <% end %>
