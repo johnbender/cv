@@ -82,7 +82,7 @@
     :where: "jQuery Conference San Francisco"
     :description: "On using category theory to identify performance optimizations in jQuery"
     :when: "June, 2012"
-    :url: "http://johnbender.us/2012/06/15/presentation-faster-javascript-through-category-theory/"
+    :url: "http://johnbender.us/2012/08/26/presentation-faster-javascript-through-category-theory/"
   -
     :authors:
       - "Bender, J."
