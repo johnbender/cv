@@ -2,6 +2,7 @@
   :template: "templates/cv.tex.erb"
   :output: "cv.tex"
   :pdf: "cv.pdf"
+
 :html:
   :template: "templates/cv.html.erb"
   :output: "cv.html"
@@ -19,6 +20,7 @@
   - Type Systems
   - Static Analysis
   - Applied Mathematics
+  - System Infrastructure/Management
 
 :ed:
   :where:
@@ -73,14 +75,13 @@
     :where: "O'Reilly Open Source Convention"
     :description: "The pitfalls of modern mobile browser fragmentation"
     :when: "July, 2012"
-    :url:
-    :note:
+    :url: "http://www.infoq.com/presentations/Mobile-Web-Development"
   -
     :authors:
       - "Bender, J."
     :title: "Faster JavaScript with Category Theory"
-    :where: "jQuery Conference San Francisco"
-    :description: "On using category theory to identify performance optimizations in jQuery"
+    :where: "JavaScript Conference EU, Berlin"
+    :description: "On using category theory to identify performance and architecture optimizations in jQuery"
     :when: "June, 2012"
     :url: "http://johnbender.us/2012/08/26/presentation-faster-javascript-through-category-theory/"
   -
@@ -108,19 +109,48 @@
     :when: "October, 2012"
     :url: "http://johnbender.github.com/applications-cat-theory"
 
+:essays:
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Faster JavaScript with Category Theory"
+    :where: "johnbender.us"
+    :when: "February, 2012"
+    :url: "http://johnbender.us/2012/02/09/faster-javascript-through-category-theory/"
+  -
+    :authors:
+      - "Bender, J."
+    :title: "A Natural Transformation in JavaScript"
+    :where: "johnbender.us"
+    :when: "March, 2012"
+    :url: "http://johnbender.us/2012/03/22/a-natural-transformation-in-javascript/"
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Splitting jQuery in Two, a Proposal"
+    :where: "johnbender.us"
+    :when: "March, 2012"
+    :url: "http://johnbender.us/2012/07/19/splitting-jquery-in-two-a-proposal/"
+
 :oss:
   -
     :title: "Development Lead"
     :name: "jQuery Mobile"
     :url: "http://www.jquerymobile.com"
-    :when: "February, 2010 -- Present"
+    :when: "November, 2010 -- Present"
     :description: "A JavaScript library for mobile compatability and UI consistency. Contributed project guidance, features, build support, testing tools, and operations support."
   -
     :title: "Co-Creator"
     :name: "Vagrant"
     :url: "http://www.vagrantup.com"
-    :when: "November, 2010 -- Present"
+    :when: "February, 2010 -- Present"
     :description: "A command line tool for simplifying the use of virtual machines as development environments. Contributed initial source, testing, internal abstractions, and features."
+  -
+    :title: "Creator"
+    :name: "Wield"
+    :url: "https://github.com/johnbender/wield"
+    :when: "August, 2012 -- Present"
+    :description: "A tiny object wrapper around the DOM, targeted at replacing the core of the manipulations found inside jQuery"
 
 :awards:
   -

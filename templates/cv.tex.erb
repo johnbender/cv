@@ -57,12 +57,11 @@
   % Open Source Contributions
   \section{\mysidestyle Open Source}
 
-  <% data[:oss].each_with_index do |project, i| %>
+  <% data[:oss][0,2].each_with_index do |project, i| %>
   \textbf{<%= project[:name] %>} \vspace{1mm}\\
     \textsl{<%= project[:title] %>} \hfill \textbf{<%= project[:when] %>}\\
     <%= project[:description] %> \hfill \url{<%= project[:url] %>}
-  <% if i + 1 != data[:oss].length %> \vspace{2mm}\\ <% end %>
-
+  <% if i + 1 != data[:oss].length %> <% end %>
   <% end %>
 
   % Honors and Awards
