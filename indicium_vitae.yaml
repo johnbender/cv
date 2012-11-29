@@ -71,19 +71,19 @@
   -
     :authors:
       - "Bender, J."
+    :title: "Faster JavaScript with Category Theory"
+    :where: "JavaScript Conference EU, Berlin"
+    :description: "On using category theory to identify performance and architecture optimizations in jQuery"
+    :when: "October, 2012"
+    :url: "http://johnbender.us/2012/08/26/presentation-faster-javascript-through-category-theory/"
+  -
+    :authors:
+      - "Bender, J."
     :title: "Progressive Enhancement on the Mobile Web"
     :where: "O'Reilly Open Source Convention"
     :description: "The pitfalls of modern mobile browser fragmentation"
     :when: "July, 2012"
     :url: "http://www.infoq.com/presentations/Mobile-Web-Development"
-  -
-    :authors:
-      - "Bender, J."
-    :title: "Faster JavaScript with Category Theory"
-    :where: "JavaScript Conference EU, Berlin"
-    :description: "On using category theory to identify performance and architecture optimizations in jQuery"
-    :when: "June, 2012"
-    :url: "http://johnbender.us/2012/08/26/presentation-faster-javascript-through-category-theory/"
   -
     :authors:
       - "Bender, J."
@@ -110,6 +110,14 @@
     :url: "http://johnbender.github.com/applications-cat-theory"
 
 :essays:
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Math Envy and CoffeeScript's Foibles"
+    :where: "johnbender.us"
+    :description: "On using operational semantics to define semantic ambiguity"
+    :when: "November, 2012"
+    :url: "http://johnbender.us/2012/08/26/presentation-faster-javascript-through-category-theory/"
   -
     :authors:
       - "Bender, J."

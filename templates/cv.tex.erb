@@ -33,14 +33,14 @@
 
   <% end %>
 
-  \section{\mysidestyle For Publication}
+  \section{\mysidestyle Reports}
 
   <% data[:pubs].each_with_index do |pub, i| %>
   <%= pub[:authors].join(",") %>, ``<%= pub[:title] %>'', \textsl{<%= pub[:where] %>}<%= pub[:when] ? ", " : "" %><%= pub[:when] %><%= pub[:url] ? ", " : "" %> \url{<%= pub[:url] %>}
     <% if i + 1 != data[:pubs].length %> \vspace{2mm}\\ <% end %>
   <% end %>
 
-  \section{\mysidestyle Recent/Upcoming Presentations}
+  \section{\mysidestyle Presentations}
 
   <% data[:presos].each_with_index do |preso, i| %>
   <%= preso[:authors].join(",") %>, ``<%= preso[:title] %>'', \textsl{<%= preso[:where] %>}, <% if !preso[:url] %><%= preso[:description] %>, <% end %> <%= preso[:when] %><%= preso[:url] ? "," : "" %> \url{<%= preso[:url] %>} <%= preso[:note] %><% if i + 1 != data[:presos].length %> \vspace{2mm}\\ <% end %>
