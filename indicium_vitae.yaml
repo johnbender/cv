@@ -117,7 +117,7 @@
     :where: "johnbender.us"
     :description: "On using operational semantics to define semantic ambiguity"
     :when: "November, 2012"
-    :url: "http://johnbender.us/2012/08/26/presentation-faster-javascript-through-category-theory/"
+    :url: "http://johnbender.us/2012/11/27/math-envy-and-coffeescripts-foibles/"
   -
     :authors:
       - "Bender, J."
