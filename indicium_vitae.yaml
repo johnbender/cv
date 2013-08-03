@@ -71,6 +71,14 @@
   -
     :authors:
       - "Bender, J."
+    :title: "Math Envy and CoffeeScript's Foibles"
+    :where: "Future Insights Live, Las Vegas"
+    :description: "A discussion on confusing term interactions and a tool to help avoid them."
+    :when: "May, 2013"
+    :url: "http://johnbender.us/2013/07/19/presentation-math-envy-and-coffeescripts-foibles/"
+  -
+    :authors:
+      - "Bender, J."
     :title: "Faster JavaScript with Category Theory"
     :where: "JavaScript Conference EU, Berlin"
     :description: "On using category theory to identify performance and architecture optimizations in jQuery"
@@ -110,6 +118,14 @@
     :url: "http://johnbender.github.com/applications-cat-theory"
 
 :essays:
+  -
+    :authors:
+      - "Bender, J."
+    :title: "Reasoning About the Heap in Rust"
+    :where: "johnbender.us"
+    :description: "Explaining Rust's approach to memory management using Hoare and Separation logics"
+    :when: "April, 2012"
+    :url: "http://johnbender.us/2013/04/30/reasoning-about-the-heap-in-rust/"
   -
     :authors:
       - "Bender, J."
