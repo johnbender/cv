@@ -28,9 +28,17 @@
   :what:
     :degree: "Bachelor of Science"
     :major: "Computer Science"
-  :when: "August 2001 -- May 2006"
+  :when: "August 2001 — May 2006"
 
 :work:
+  -
+    :where:
+      :title: "The Filament Group"
+      :loc: "Boston, Massachusetts, United States"
+    :what:
+      :title: "Consultant"
+      :description: "Senior software engineer focused large JavaScript projects, operations, build management, and open source tools."
+    :when: "August 2013 — present"
   -
     :where:
       :title: "Adobe Systems"
@@ -38,7 +46,7 @@
     :what:
       :title: "Senior Computer Scientist"
       :description: "Senior software engineer focused on the jQuery Mobile open source JavaScript library. Contributed project guidance, features, build support, testing tools, and operations support."
-    :when: "July 2011 -- present"
+    :when: "July 2011 — August 2013"
   -
     :where:
       :title: "Originate Labs"
@@ -46,7 +54,7 @@
     :what:
       :title: "Tech Lead, Director of Engineering"
       :description: "Senior staff member focused on management process, tools, research, development practices, project oversight and hiring practices."
-    :when: "August 2009 -- July 2011"
+    :when: "August 2009 — July 2011"
   -
     :where:
       :title: "The Henson Group"
@@ -54,17 +62,18 @@
     :what:
       :title: "Software Consultant"
       :description: "Specialized in .NET technology stack working for a diverse client set including hedge funds and large multinational corporations like Weight Watchers."
-    :when: "November 2007 -- August 2009"
+    :when: "November 2007 — August 2009"
 
 :pubs:
   -
     :authors:
       - "Bender, J."
-    :title: "Applications of Category Theory in Modern JavaScript"
-    :where: "In Progress"
-    :description: "Identifying a set of morphisms via category theory that can be composed leading to loop fusion"
-    :when:
-    :url: "http://johnbender.github.com/applications-cat-theory/paper-2012-08.pdf"
+      - "Lesani, M."
+      - "Palsberg, J."
+    :title: "Declarative Fence Insertion"
+    :where: "OOPSLA"
+    :description: "We describe a declarative way to specify instructions that should not be reordered in lockfree concurrent algorithms."
+    :when: 2015
 
 :presos:
   -
@@ -160,19 +169,19 @@
     :title: "Development Lead"
     :name: "jQuery Mobile"
     :url: "http://www.jquerymobile.com"
-    :when: "November, 2010 -- Present"
+    :when: "November, 2010 — Present"
     :description: "A JavaScript library for mobile compatability and UI consistency. Contributed project guidance, features, build support, testing tools, and operations support."
   -
     :title: "Co-Creator"
     :name: "Vagrant"
     :url: "http://www.vagrantup.com"
-    :when: "February, 2010 -- Present"
+    :when: "February, 2010 — Present"
     :description: "A command line tool for simplifying the use of virtual machines as development environments. Contributed initial source, testing, internal abstractions, and features."
   -
     :title: "Creator"
     :name: "Wield"
     :url: "https://github.com/johnbender/wield"
-    :when: "August, 2012 -- Present"
+    :when: "August, 2012 — Present"
     :description: "A tiny object wrapper around the DOM, targeted at replacing the core of the manipulations found inside jQuery"
 
 :awards:
@@ -187,7 +196,7 @@
   -
     :name: "Letterman, University of Hawai'i"
     :who: "NCAA Division I Men's Volleyball"
-    :when: "2001 -- 2005 "
+    :when: "2001 — 2005 "
 
 :skills:
   - JavaScript
