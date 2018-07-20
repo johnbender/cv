@@ -7,6 +7,7 @@
   :template: "templates/cv.html.erb"
   :output: "cv.html"
 
+
 :address:
   :street: "6109 Melvil Street"
   :other: "Culver City, California 90232"
@@ -14,12 +15,13 @@
 :phone: "+1 917 504 3095"
 :email: "john.m.bender@gmail.com"
 
+:show_work_descriptions: false
+
 :interests:
-  - Declarative Languages
+  - Concurrency
+  - Memory Models
   - Formal Verification
-  - Type Systems
   - Static Analysis
-  - System Infrastructure/Management
 
 :ed:
   :where:
@@ -31,6 +33,14 @@
   :when: "August 2001 — May 2006"
 
 :work:
+  -
+    :where:
+      :title: Quantstamp
+      :loc: San Francisco, California, United States
+    :what:
+      :title: Smart-contract Verfication Consultant
+      :description: "Consultant focused on Solidity contract audits and static analysis."
+    :when: "July 2018 — present"
   -
     :where:
       :title: "The Filament Group"
@@ -74,6 +84,14 @@
     :where: "OOPSLA"
     :description: "We describe a declarative way to specify instructions that should not be reordered in lockfree concurrent algorithms."
     :when: 2015
+  -
+    :authors:
+      - "Bender, J."
+      - "Palsberg, J."
+    :title: "A Logic for Concurrency with Specified Orders"
+    :where: "POPL (submitted)"
+    :description: "A logic for mechanized proofs of correctness in the weak-memory semantics of RMC."
+    :when: 2018
 
 :presos:
   -
@@ -166,23 +184,55 @@
 
 :oss:
   -
-    :title: "Development Lead"
-    :name: "jQuery Mobile"
-    :url: "http://www.jquerymobile.com"
-    :when: "November, 2010 — Present"
-    :description: "A JavaScript library for mobile compatability and UI consistency. Contributed project guidance, features, build support, testing tools, and operations support."
-  -
     :title: "Co-Creator"
     :name: "Vagrant"
     :url: "http://www.vagrantup.com"
     :when: "February, 2010 — Present"
     :description: "A command line tool for simplifying the use of virtual machines as development environments. Contributed initial source, testing, internal abstractions, and features."
   -
+    :title: "Development Lead"
+    :name: "jQuery Mobile"
+    :url: "http://www.jquerymobile.com"
+    :when: "November, 2010 — Present"
+    :description: "A JavaScript library for mobile compatability and UI consistency. Contributed project guidance, features, build support, testing tools, and operations support."
+  -
+    :disabled: true
     :title: "Creator"
     :name: "Wield"
     :url: "https://github.com/johnbender/wield"
     :when: "August, 2012 — Present"
     :description: "A tiny object wrapper around the DOM, targeted at replacing the core of the manipulations found inside jQuery"
+
+
+:funding:
+  -
+    :authors:
+      - "Bender, J."
+      - "Palsberg, J."
+    :title: Concurrency with Specified Orders
+    :where: "NSF"
+    :description: "Exploratory funding for work on compilers, verification, and synthesis with specified orders for concurrent programs under weak memory models"
+    :when: 2018
+
+:teaching:
+  -
+    :course: CS 132, Compilers
+    :when:
+      - "F'14"
+      - "S'16"
+      - "F'17"
+    :where: "University of California, Los Angeles"
+  -
+    :course: CS 232, Static Analysis
+    :when:
+      - "W'18"
+    :where: "University of California, Los Angeles"
+
+:service:
+  -
+    :what: "Referee"
+    :where: "Transactions on Programming Languages and Systems"
+    :when: 2016
 
 :awards:
   -

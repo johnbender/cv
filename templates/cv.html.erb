@@ -76,9 +76,11 @@ width: 11
           <div>
             <em><%= position[:what][:title] %></em><b class="right"><%= position[:when] %></b>
           </div>
+          <% if data[:show_work_descriptions] %>
           <div>
             <%= position[:what][:description] %>
           </div>
+          <% end %>
         </div>
         <% end %>
       </div>
@@ -97,36 +99,27 @@ width: 11
     </div>
     <div class="row-fluid">
       <div class="span2">
-        Presentations
+        Funding
       </div>
       <div class="span10">
-        <% data[:presos].each_with_index do |preso, i| %>
+        <% data[:funding].each_with_index do |funding, i| %>
         <div class="citation">
-          <%= preso[:authors].join(",") %>, "<%= preso[:title] %>", <em><%= preso[:where] %></em>, <% if !preso[:url] %><%= preso[:description] %>, <% end %> <%= preso[:when] %><%= preso[:url] ? "," : "" %> <a href="<%= preso[:url] %>"><%= preso[:url] %></a> <%= preso[:note] %>
+          <%= funding[:authors].join(", ") %>, "<%= funding[:title] %>",
+          <em><%= funding[:where] %></em><%= funding[:when] ? ", " : "" %>
+          <%= funding[:when] %><%= funding[:url] ? ", " : "" %>
+          <a href="<%= funding[:url] %>"><%= funding[:url] %></a>
         </div>
         <% end %>
       </div>
     </div>
     <div class="row-fluid">
       <div class="span2">
-        Posters
+        Teaching
       </div>
       <div class="span10">
-        <% data[:posters].each_with_index do |poster, i| %>
+        <% data[:teaching].each_with_index do |course, i| %>
         <div class="citation">
-          <%= poster[:authors].join(",") %>, "<%= poster[:title] %>", <em><%= poster[:where] %></em>, <%= poster[:when] %><%= poster[:url] ? "," : "" %> <a href="<%= poster[:url] %>"><%= poster[:url] %></a> <%= poster[:note] %>
-        </div>
-        <% end %>
-      </div>
-    </div>
-    <div class="row-fluid">
-      <div class="span2">
-        Essays
-      </div>
-      <div class="span10">
-        <% data[:essays].each_with_index do |essay, i| %>
-        <div class="citation">
-          <%= essay[:authors].join(",") %>, "<%= essay[:title] %>", <em><%= essay[:where] %></em>, <%= essay[:when] %><%= essay[:url] ? "," : "" %> <a href="<%= essay[:url] %>"><%= essay[:url] %></a> <%= essay[:note] %>
+          <%= course[:when].join(", ") %>, <%= course[:course] %>, <em><%= course[:where] %></em>
         </div>
         <% end %>
       </div>
@@ -136,7 +129,7 @@ width: 11
         Open Source
       </div>
       <div class="span10">
-        <% data[:oss].each_with_index do |project, i| %>
+        <% data[:oss].select { |project| !project[:disabled] } .each_with_index do |project, i| %>
         <div class="position">
           <div>
             <b><%= project[:name] %></b>
@@ -147,6 +140,18 @@ width: 11
           <div>
             <%= project[:description] %> <a class="right" href="<%= project[:url] %>"><%= project[:url] %></a>
           </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span2">
+        Service
+      </div>
+      <div class="span10">
+        <% data[:service].each_with_index do |serv, i| %>
+        <div>
+          <%= serv[:what] %>, <%= serv[:where] %>, <%= serv[:when] %>
         </div>
         <% end %>
       </div>
